@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/fontawesome-6/css/all.css">
+</head>
+<body style="background-color: #f1f8e9;">
+    <!-- header -->
+    <div class="row" style="background-color: #ffeb3b;">
+        <div class="col-1">
+        </div>
+        
+        <div class="col-3">
+			<a th:href="@{/home}">
+            	<img src="/img/logo.png" height="40" width="200" />
+            </a>
+        </div>
+
+        <div class="col-lg mt-2 d-flex justify-content-end align-content-center">
+            <div class="dropdown">
+                <a class="dropdown-toggle text-decoration-none text-dark" role="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    Tìm bất động sản
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-2">
+            <a href="#" class="nav-link text-dark text-center">
+                <i class="fa-solid fa-bullhorn"></i>
+                Đăng tin
+            </a>
+        </div>
+
+        <div class="col-2">
+            <a class="nav-link text-dark text-center">
+                <i class="fa-solid fa-book"></i>
+                Trợ giúp
+            </a>
+        </div>
+
+        <div class="col-2">
+            <a href="#" class="nav-link text-dark text-center">
+                <i class="fas fa-user"></i>
+                Đăng nhập
+            </a>
+        </div>
+    </div>
+    
+    <div class="container mt-5 p-5">        
+        <h2>Home page</h2>
+    </div>
+</body>
+<script src="/jquery.js"></script>
+<script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+<script src="/fontawesome-6/js/all.js"></script>
+</html>
